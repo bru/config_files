@@ -13,6 +13,7 @@ colors
 
 # enable colored output from ls, etc
 export CLICOLOR=1
+export LSCOLORS=cxfxexexDxexexDxDxcxcx
 
 # expand functions in the prompt
 setopt prompt_subst
