@@ -1,10 +1,8 @@
 alias migrate="rake db:migrate db:test:prepare"
 alias remigrate="rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare"
 alias remongrate="rake mongoid:migrate && rake mongoid:migrate:redo"
-alias gadd="git add -u && git add . && git status"
 alias svnprecommit="git svn rebase && rake features && rake test"
 alias hgprecommit="hg pull && rake features && rake test"
-alias g="git"
 alias tu="ruby_test unit"
 alias tf="ruby_test functional"
 alias sm="ruby_spec models"
@@ -15,5 +13,20 @@ alias hgrev="hg revert --no-backup"
 alias hgclean="hg status | grep -e '^\\?' | sed 's/^\\?//' | xargs -t rm -f"
 alias gi="gem install"
 alias giv="gem install -v"
-alias gci="git pull --rebase && rake && git push"
 alias tlf="tail -f"
+
+# Git related aliases
+alias g="git"
+alias gadd="git add -u && git add . && git status"
+alias gb='git branch'
+alias gba='git branch -a'
+alias gc='git commit -v'
+alias gci='git commit'
+alias gco='git checkout'
+alias gd='git diff'
+alias gl='git pull'
+alias gm='git merge'
+alias gp='git push'
+alias gsh='git stash'
+alias gst='git status'
+alias gci="git pull --rebase && rake && git push"

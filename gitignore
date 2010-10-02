@@ -3,3 +3,6 @@ tags
 .swo
 jferris-*.gemspec
 *.scratch.*
+.vagrant
+Vagrantfile
+.DS_Store

@@ -1,6 +1,5 @@
 # ADD LOCAL CONFIGURATION HERE
 
-
 # DO NOT EDIT BELOW THIS LINE
 [push]
   default = tracking
@@ -8,10 +7,15 @@
 	diff = auto
 	status = auto
 	branch = auto
+[apply]
+	whitespace = nowarn
 [core]
 	excludesfile = ~/.gitignore
+	editor = mate -w
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+[git-tmbundle]
+	gitx-path = /usr/bin/gitx
 [alias]
   c = commit -m
   a = add
@@ -29,3 +33,5 @@
   pr = remote prune origin
   up = !git fetch origin && git rebase origin/master
   rbc = rebase --continue
+  co = checkout
+  sh = !git-sh

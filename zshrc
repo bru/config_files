@@ -30,3 +30,7 @@ setopt histignoredups
 
 # keep more history
 export HISTSIZE=200
+
+export LSCOLORS=gxfxcxdxbxegedabagacad
+
+source ~/.cinderella.profile
