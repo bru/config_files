@@ -13,11 +13,14 @@ if [ -e "$HOME/.aliases" ]; then
   source "$HOME/.aliases"
 fi
 
-# vi mode
-# bindkey -v
+# emacs mode
+bindkey -e
 
 # use incremental search
 bindkey ^R history-incremental-search-backward
+
+# search path for the cd command
+cdpath=(.. ~ ~/Code )
 
 # expand functions in the prompt
 setopt prompt_subst
