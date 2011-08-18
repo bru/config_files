@@ -35,5 +35,6 @@ alias gci="git pull --rebase && rake && git push"
 alias gpl='git pull --rebase'
 
 # Vim
-alias vi="mvim"
+#alias vi="mvim"
+#alias mvim="open -a MacVim"
 

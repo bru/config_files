@@ -2,3 +2,9 @@
 --type-add
 ruby=.rake
 --type-add=ruby=.haml
+--type-set=feature=.feature
+--nobinary
+--ignore-dir=vendor/
+--ignore-dir=coverage/
+--ignore-dir=log/
+--ignore-dir=tmp/

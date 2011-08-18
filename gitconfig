@@ -11,7 +11,7 @@
 	whitespace = nowarn
 [core]
 	excludesfile = ~/.gitignore
-	editor = mate -w
+	editor = vim
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [git-tmbundle]
